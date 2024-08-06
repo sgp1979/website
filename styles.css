@@ -1,0 +1,209 @@
+/*CSS to be applied to index.html*/
+
+header {
+    top: 0;
+    left: 0;
+    background-color: rgb(133, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content:space;
+    padding: 10px;
+    position: sticky;
+    z-index: 10;
+}
+
+.menu-toggle {
+    display: list-item;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+img{
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.brand{
+    font-family: Georgia;
+    font-style: normal;
+    font-size: larger;
+    color: white;
+    margin-right: auto;
+}
+
+.header-title{
+    background-color:  rgb(133, 13, 13);
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    margin-left: 210px;
+    transition: margin-left 0.3s ease;
+}
+
+.hide-main {
+    margin-left: 20px;
+}
+
+.sidebar {
+    top: 90px;
+    position: fixed;
+    left: 0px;
+    padding: 10px;
+    width: 180px;
+    height: 100%;
+    background-color: rgb(133, 13, 13);
+    transition: left 0.3s ease;
+}
+
+.hide-sidebar {
+    left: -200px;
+}
+
+.sidebar nav {
+    padding-top: 10px;
+}
+
+.sidebar-title {
+    margin-top: 10px;
+    color: white;
+    font-family: Helvetica;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    list-style-type: square;
+    color: white;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    font-family: Helvetica;
+    font-size: larger;
+    text-decoration: none;
+}
+  
+.sidebar a:hover {
+    background-color: rgb(204, 117, 117);
+    color: white;
+}
+
+.header-title a {
+    color: white;
+    font-family: Helvetica;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.header-title a:hover {
+    background-color: rgb(204, 117, 117);
+    color: white;
+}
+
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin: 90px;
+}
+
+section[id=Title] {
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 250%;
+    color: rgb(70, 19, 109);
+    text-align: center;
+    padding: 10px;
+}
+
+section[id=Subtitle] {
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 150%;
+    color: rgb(70, 19, 109);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.custom-heading{
+    margin-left: 0ch;
+    margin-bottom: 0;
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: larger;
+    color: rgb(70, 19, 109);
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+p.quotes {
+    margin-inline-start: 50px; 
+    font-family: Cambria, Cochin, Georgia, serif;
+}
+
+p.copyright {
+    text-align: center;
+    color: white;
+    font-size:smaller;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%; 
+}
+
+table img {
+    max-width: 100%;
+}
+
+#Scripture #special-table, #Scripture #special-table th, #Scripture #special-table td {
+    border-collapse: collapse;
+    border: 2px solid brown;
+    padding: 8px;
+    column-rule-width: initial;
+}
+
+footer {
+    background-color: rgb(133, 13, 13);
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+
+
+/*<!--Code for auto-resizing of tables--> Courtesy of ChatGPT*/
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    table tr {
+        display: block; /* Display table rows as block elements */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    table td {
+        display: block; /* Display table cells as block elements */
+        width: 100%; /* Make table cells fill the width of the table */
+    }
+}
