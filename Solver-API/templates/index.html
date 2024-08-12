@@ -3,45 +3,7 @@
         <title>Main Page</title>
         <link rel="stylesheet" href="{{ url_for('static', path='/style.css')}}">
     </head>
-    
     <body>
-
-        <!--Header-->
-        <header>
-            <div class="menu-toggle" onclick="toggleSidebar()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="logo"><a href="index.html"><img src="Logo.jpg" width="40" alt="Logo"></a></div>
-            <div class="brand">SGP1979</div>
-            <div class="header-home"><a href="index.html">Home</a></div>
-        </header><!--end of Header-->
-
-        <!--Sidebar Contents-->
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-title">Contents</div>
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>  
-        
-            <!--JavaScript to toggle the sidebar-->
-            <script>
-                function toggleSidebar(){
-                    var sidebar = document.getElementById("sidebar");
-                    var content = document.querySelector("main");
-                    sidebar.classList.toggle("hide-sidebar");
-                    content.classList.toggle("hide-main");
-                }
-            </script>
-        </div><!--end of Sidebar Contents-->
-        
-        <!--Main-->
-        <main>   
-        
         <h3>{{message}}</h3>
 
         <h2>Quadratic Equations Solver for: <br> ax<sup>2</sup> + bx + c = 0 </h2>
@@ -62,14 +24,5 @@
             Solve and Plot</button>
         </form>
 
-        </main><!--end of Main-->
-        
-        <footer>
-            <p class="copyright">&copy; SGP1979 &nbsp;&nbsp; info@sgp1979.com &nbsp;&nbsp;
-                <a target="_blank" href="https://github.com/sgp1979";><img src="GitHub-Mark-ea2971cee799.png" width="18" alt="GitHub"></a></p>
-        </footer>
-
-            
     </body>
 </html>
-
