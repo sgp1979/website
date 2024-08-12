@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "fastapi_app/main.py",
+      "src": "Solver-API/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "fastapi_app/main.py"
+      "dest": "Solver-API/main.py"
     }
   ]
 }
