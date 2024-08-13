@@ -48,21 +48,19 @@ img{
     padding: 10px;
 }
 
-
-
 main {
-    margin-left: 210px;
+    margin-left: 20px;
     transition: margin-left 0.3s ease;
 }
 
-.hide-main {
-    margin-left: 20px;
+.show-main {
+    margin-left: 210px;
 }
 
 .sidebar {
     top: 90px;
     position: fixed;
-    left: 0px;
+    left: -200px;
     padding: 10px;
     width: 180px;
     height: 100%;
@@ -70,8 +68,8 @@ main {
     transition: left 0.3s ease;
 }
 
-.hide-sidebar {
-    left: -200px;
+.show-sidebar {
+    left: 0px;
 }
 
 .sidebar nav {
